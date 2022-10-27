@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ex_2 {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         double nota = 0, media;
         Scanner leia = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat(".0");
