@@ -33,9 +33,9 @@ public class Ex_2 {
                 System.out.print(" " + par[i]);
         }
 
-        System.out.println("\nA soma de todos elementos do vetor é: " + df.format(soma));
+        System.out.println("\nA soma de todos elementos do vetor é: " + soma);
 
         media = soma / vetorDeNumeros.length;
-        System.out.println("\n***** A média dos elementos: " + media);
+        System.out.println("\n***** A média dos elementos: " + df.format(media));
     }
 }

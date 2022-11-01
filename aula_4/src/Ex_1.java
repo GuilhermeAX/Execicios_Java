@@ -21,7 +21,7 @@ public class Ex_1 {
                 System.out.print("O número " + numero + " está localizado na posição: " + i);
                 break;
             } else if (i == vetor.length - 1) {
-                System.out.print("O número "+numero+" não foi licalizado!");
+                System.out.print("O número " + numero + " não foi licalizado!");
             }
         }
     }
