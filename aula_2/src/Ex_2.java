@@ -1,6 +1,4 @@
-import java.sql.Array;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Ex_2 {
