@@ -13,7 +13,9 @@ public class Cliente {
         this.email = email;
         this.telefone = telefone;
         this.endereco = endereco;
+
     }
+
 
     public String getCpf() {
         return cpf;
@@ -56,13 +58,14 @@ public class Cliente {
     }
 
     public void visualizar() {
+
         System.out.println("**************DADOS D@ CLIENTE**************");
         System.out.println("CPF: " + cpf);
         System.out.println("Nome: " + nome);
         System.out.println("E-mail: " + email);
         System.out.println("Telefone: " + telefone);
         System.out.println("Endereco: " + endereco);
-        System.out.println("********************************************");
+
 
     }
 }

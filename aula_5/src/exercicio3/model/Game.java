@@ -57,7 +57,7 @@ public class Game {
 
     public void visualizar() {
         System.out.println("************ INFORMAÇÕES DO JOGO ****************");
-        System.out.println(codigo + " - " + nome + " - " + plataforma + " - " + anoLancamento + " - R$" + preco);
-        System.out.println("*************************************************");
+        System.out.println("\n"+codigo + " - " + nome + " - " + plataforma + " - " + anoLancamento + " - R$" + preco);
+
     }
 }

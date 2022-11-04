@@ -1,6 +1,8 @@
 package exercicio3;
 
+import exercicio3.model.Console;
 import exercicio3.model.Game;
+import exercicio3.model.Jogo;
 
 public class TestaGame {
     public static void main(String[] args) {
@@ -10,6 +12,17 @@ public class TestaGame {
 
         game.visualizar();
         game1.visualizar();
+
+        //Exercicio dia 04/11/22
+        Game console = new Console(3,"DOOM: ANIQUILAÇÃO","PLAYSTATION",2020,59.99,"PS4");
+        Game console2 = new Console(4,"Among US","PC",2019,29.99,"DirectX 10");
+        console.visualizar();
+        console2.visualizar();
+
+        Game jogo = new Jogo(1, "MORTAL KOMBAT", "XBOX",2021,99.90,"+18");
+        Game jogo1 = new Jogo(2, "COUNTER-STRIKE: GLOBAL OFFENSIVE (CS:GO)","PC",2012,24.99,"+12");
+        jogo.visualizar();
+        jogo1.visualizar();
 
     }
 }

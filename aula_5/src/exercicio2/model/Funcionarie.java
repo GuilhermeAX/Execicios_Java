@@ -62,6 +62,6 @@ public class Funcionarie {
         System.out.println("Telefone: " + telefone);
         System.out.println("Email: " + email);
         System.out.println("Endereco: " + endereco);
-        System.out.println("*******************************************************");
+
     }
 }
