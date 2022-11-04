@@ -20,6 +20,5 @@ public class Gerente extends Funcionarie {
     public void visualizar(){
         super.visualizar();
         System.out.println("Gerente da loja de " + this.loja);
-        System.out.println("*******************************************************");
     }
 }

@@ -3,33 +3,23 @@ package exercicio1.model;
 
 public class PessoaFisica extends Cliente {
 
-    private String aniversario;
-    private int tipo;
+    private String cpf;
 
-    public PessoaFisica(String cpf, String nome, String email, String telefone, String endereco, int tipo, String aniversario) {
-        super(cpf, nome, email, telefone, endereco);
-        this.aniversario = aniversario;
-        this.tipo = tipo;
+    public PessoaFisica(int tipo, String nome, String email, String telefone, String endereco,String cpf) {
+        super(tipo, nome, email, telefone, endereco);
+        this.cpf = cpf;
     }
 
-    public int getTipo() {
-        return tipo;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public void visualizar(){
         super.visualizar();
-        String tipo = "";
-        switch (this.tipo) {
-            case 1:
-                tipo = "Pessoa Física";
-                break;
-        }
-        System.out.println("Aniversário: " + aniversario);
-        System.out.println("Tipo: " + tipo);
-        System.out.println("********************************************");
+        System.out.println("CPF: " + cpf);
     }
 }

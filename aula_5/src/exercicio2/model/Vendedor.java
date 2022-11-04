@@ -19,6 +19,5 @@ public class Vendedor extends Funcionarie{
     public void visualizar(){
         super.visualizar();
         System.out.println("Quantos % sob as vendas: " + this.percentualVenda+"%");
-        System.out.println("*******************************************************");
     }
 }

@@ -56,7 +56,7 @@ public class Funcionarie {
     }
 
     public void visualizar() {
-        System.out.println("*****************DADOS D@ FUNCIONARI@*****************");
+        System.out.println("\n*****************DADOS D@ FUNCIONARI@*****************");
         System.out.println("Matricula: " + matricula);
         System.out.println("Nome: " + nome);
         System.out.println("Telefone: " + telefone);

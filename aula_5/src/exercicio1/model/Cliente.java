@@ -1,14 +1,14 @@
 package exercicio1.model;
 
 public class Cliente {
-    private String cpf;
+    private int tipo;
     private String nome;
     private String email;
     private String telefone;
     private String endereco;
 
-    public Cliente(String cpf, String nome, String email, String telefone, String endereco) {
-        this.cpf = cpf;
+    public Cliente(int tipo, String nome, String email, String telefone, String endereco) {
+        this.tipo = tipo;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
@@ -17,12 +17,12 @@ public class Cliente {
     }
 
 
-    public String getCpf() {
-        return cpf;
+    public int getTipo() {
+        return tipo;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 
     public String getNome() {
@@ -58,10 +58,19 @@ public class Cliente {
     }
 
     public void visualizar() {
+        String tipo = "";
+        switch (this.tipo) {
+            case 1:
+                tipo = "PESSOA FÍSICA";
+                break;
+            case 2:
+                tipo = "PESSOA JURÍDICA";
+                break;
+        }
 
-        System.out.println("**************DADOS D@ CLIENTE**************");
-        System.out.println("CPF: " + cpf);
+        System.out.println("\n************** DADOS D@ CLIENTE "+ tipo+" **************");
         System.out.println("Nome: " + nome);
+        System.out.println("Cliente " + tipo);
         System.out.println("E-mail: " + email);
         System.out.println("Telefone: " + telefone);
         System.out.println("Endereco: " + endereco);

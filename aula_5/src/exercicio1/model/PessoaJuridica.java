@@ -3,13 +3,12 @@ package exercicio1.model;
 
 public class PessoaJuridica extends Cliente{
     private String cnpj;
-    private int tipo;
 
-    public PessoaJuridica(String cpf, String nome, String email, String telefone, String endereco, String cnpj, int tipo) {
-        super(cpf, nome, email, telefone, endereco);
+    public PessoaJuridica(int tipo, String nome, String email, String telefone, String endereco, String cnpj) {
+        super(tipo, nome, email, telefone, endereco);
         this.cnpj = cnpj;
-        this.tipo = tipo;
     }
+
 
     public String getCnpj() {
         return cnpj;
@@ -19,24 +18,8 @@ public class PessoaJuridica extends Cliente{
         this.cnpj = cnpj;
     }
 
-    public int getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
-
     public void visualizar() {
         super.visualizar();
-        String tipo = "";
-        switch (this.tipo) {
-            case 2:
-                tipo = "Pessoa Jurídica";
-                break;
-        }
         System.out.println("Cnpj: " + cnpj);
-        System.out.println("Tipo: " + tipo);
-        System.out.println("********************************************");
     }
 }
