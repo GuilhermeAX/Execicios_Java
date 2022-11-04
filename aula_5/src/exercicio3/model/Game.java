@@ -3,14 +3,14 @@ package exercicio3.model;
 public class Game {
     private int codigo;
     private String nome;
-    private String plataforma;
+    private String desenvolvedora;
     private int anoLancamento;
     private double preco;
 
-    public Game(int codigo, String nome, String plataforma, int anoLancamento, double preco) {
+    public Game(int codigo, String nome, String desenvolvedora, int anoLancamento, double preco) {
         this.codigo = codigo;
         this.nome = nome;
-        this.plataforma = plataforma;
+        this.desenvolvedora = desenvolvedora;
         this.anoLancamento = anoLancamento;
         this.preco = preco;
     }
@@ -32,11 +32,11 @@ public class Game {
     }
 
     public String getPlataforma() {
-        return plataforma;
+        return desenvolvedora;
     }
 
-    public void setPlataforma(String plataforma) {
-        this.plataforma = plataforma;
+    public void setPlataforma(String classificacao) {
+        this.desenvolvedora = classificacao;
     }
 
     public int getAnoLancamento() {
@@ -57,7 +57,11 @@ public class Game {
 
     public void visualizar() {
         System.out.println("************ INFORMAÇÕES DO JOGO ****************");
-        System.out.println("\n"+codigo + " - " + nome + " - " + plataforma + " - " + anoLancamento + " - R$" + preco);
+        System.out.println("\nCódigo: " + codigo);
+        System.out.println("Nome: " + nome);
+        System.out.println("Desenvolvedora: " + desenvolvedora);
+        System.out.println("Ano de lançamento: " + anoLancamento);
+        System.out.println("Preço: R$" + preco);
 
     }
 }

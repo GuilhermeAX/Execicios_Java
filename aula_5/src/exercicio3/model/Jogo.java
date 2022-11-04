@@ -1,10 +1,10 @@
 package exercicio3.model;
 
-public class Jogo extends Game{
+public class Jogo extends Game {
     private String classificacao;
 
-    public Jogo(int codigo, String nome, String plataforma, int anoLancamento, double preco, String classificacao) {
-        super(codigo, nome, plataforma, anoLancamento, preco);
+    public Jogo(int codigo, String nome, String desenvolvedora, int anoLancamento, double preco, String classificacao) {
+        super(codigo, nome, desenvolvedora, anoLancamento, preco);
         this.classificacao = classificacao;
     }
 
